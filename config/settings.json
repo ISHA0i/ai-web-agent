@@ -1,0 +1,116 @@
+{
+  "analysis": {
+    "ignorePatterns": [
+      "node_modules",
+      ".git",
+      "dist",
+      "build",
+      ".next",
+      ".nuxt",
+      ".cache",
+      "coverage",
+      ".nyc_output",
+      "*.log",
+      ".DS_Store",
+      "Thumbs.db"
+    ],
+    "maxFileSize": 1048576,
+    "includeHiddenFiles": false,
+    "followSymlinks": false
+  },
+  "prompts": {
+    "defaultTemplate": "default",
+    "outputDirectory": "output",
+    "includeFileContents": false,
+    "maxFilesToInclude": 50,
+    "specializedTemplates": {
+      "feature": "feature-development",
+      "bugfix": "bug-fixing",
+      "optimization": "performance-optimization",
+      "refactor": "code-refactoring",
+      "security": "security-audit",
+      "testing": "test-improvement"
+    }
+  },
+  "technology": {
+    "frameworks": {
+      "react": {
+        "extensions": [".jsx", ".tsx"],
+        "configFiles": ["package.json", "tsconfig.json"],
+        "dependencies": ["react", "react-dom"]
+      },
+      "vue": {
+        "extensions": [".vue"],
+        "configFiles": ["package.json", "vite.config.js"],
+        "dependencies": ["vue"]
+      },
+      "angular": {
+        "extensions": [".ts", ".html"],
+        "configFiles": ["package.json", "angular.json"],
+        "dependencies": ["@angular/core"]
+      },
+      "next": {
+        "extensions": [".jsx", ".tsx"],
+        "configFiles": ["next.config.js", "package.json"],
+        "dependencies": ["next"]
+      },
+      "nuxt": {
+        "extensions": [".vue", ".js"],
+        "configFiles": ["nuxt.config.js", "package.json"],
+        "dependencies": ["nuxt"]
+      }
+    },
+    "styling": {
+      "tailwind": {
+        "configFiles": ["tailwind.config.js", "postcss.config.js"],
+        "dependencies": ["tailwindcss"]
+      },
+      "styledComponents": {
+        "dependencies": ["styled-components"]
+      },
+      "emotion": {
+        "dependencies": ["@emotion/react", "@emotion/styled"]
+      }
+    },
+    "bundlers": {
+      "vite": {
+        "configFiles": ["vite.config.js", "vite.config.ts"],
+        "dependencies": ["vite"]
+      },
+      "webpack": {
+        "configFiles": ["webpack.config.js", "webpack.config.ts"],
+        "dependencies": ["webpack"]
+      },
+      "parcel": {
+        "configFiles": [".parcelrc"],
+        "dependencies": ["parcel"]
+      }
+    },
+    "testing": {
+      "jest": {
+        "configFiles": ["jest.config.js", "jest.config.ts"],
+        "dependencies": ["jest"]
+      },
+      "vitest": {
+        "configFiles": ["vitest.config.js", "vitest.config.ts"],
+        "dependencies": ["vitest"]
+      },
+      "cypress": {
+        "configFiles": ["cypress.config.js", "cypress.config.ts"],
+        "dependencies": ["cypress"]
+      }
+    }
+  },
+  "output": {
+    "formats": ["markdown", "json"],
+    "includeTimestamp": true,
+    "includeAnalysisSummary": true,
+    "maxPromptLength": 10000
+  },
+  "logging": {
+    "level": "info",
+    "includeTimestamps": true,
+    "logToFile": false,
+    "logFile": "ai-web-agent.log"
+  }
+} 

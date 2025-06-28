@@ -1,0 +1,52 @@
+{
+  "name": "ai-web-agent",
+  "version": "1.0.0",
+  "description": "An intelligent AI agent that analyzes web projects and generates contextual prompts for AI assistance",
+  "main": "index.js",
+  "bin": {
+    "ai-web-agent": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "analyze": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "quick": "node index.js --quick",
+    "feature": "node index.js --specialized feature",
+    "bugfix": "node index.js --specialized bugfix",
+    "optimize": "node index.js --specialized optimization",
+    "refactor": "node index.js --specialized refactor"
+  },
+  "keywords": [
+    "ai",
+    "codebase-analysis",
+    "prompt-generation",
+    "web-development",
+    "react",
+    "vue",
+    "angular",
+    "javascript",
+    "typescript",
+    "automation"
+  ],
+  "author": "AI Web Agent",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-web-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ai-web-agent/issues"
+  },
+  "homepage": "https://github.com/yourusername/ai-web-agent#readme",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "commander": "^14.0.0",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.3",
+    "inquirer": "^12.6.3"
+  }
+}
