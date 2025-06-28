@@ -235,6 +235,4 @@ If you encounter any issues or have questions:
 
 **Happy coding with AI! 🚀** 
 
-
-
 node index.js ./your-project-path "Your question or feature request"
